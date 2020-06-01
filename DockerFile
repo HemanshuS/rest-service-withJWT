@@ -1,0 +1,4 @@
+FROM java:8
+ADD target/service1.jar service1.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "service1.jar"]
